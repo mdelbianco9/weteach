@@ -28,6 +28,12 @@
         }
     })
 
+    // fade heading in 
+    $('.header-content').click(function() {
+        $('.header-content').fadeIn(2000);
+    });
+    
+
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
@@ -61,4 +67,8 @@
         }
     });
 
+
 })(jQuery); // End of use strict
+
+
+

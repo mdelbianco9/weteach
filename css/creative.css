@@ -37,16 +37,28 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
 .bg-primary {
-  background-color: #F05F40;
+  background-color: #76a189;
+  animation-name: redbox;
+  animation-duration: 4s;
+  animation-delay: 3s;
 }
+@keyframes redbox {
+  0% {background-color: #F05F40;}
+  25% {background-color: #abbdbf;}
+  75% {background-color: #76a189;}
+  100% {background-color: #d09386;}
+}
+
 .bg-dark {
-  background-color: #222222;
+  background-color: #546e80;
   color: white;
 }
 .text-faded {
@@ -201,6 +213,7 @@ header .header-content .header-content-inner p {
   }
   header .header-content .header-content-inner h1 {
     font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
@@ -265,7 +278,8 @@ header .header-content .header-content-inner p {
   font-size: 18px;
 }
 .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+  opacity: .8;
+  background-color: #006e77;
 }
 .portfolio-box:focus {
   outline: none;
@@ -284,6 +298,13 @@ header .header-content .header-content-inner p {
 .text-primary {
   color: #F05F40;
 }
+
+#hovercons:hover {
+  animation: flipInX;
+  animation-duration: 3s;
+
+}
+
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
@@ -343,6 +364,9 @@ fieldset[disabled] .btn-default.active {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+  animation-delay: 0.5s;
+}
+
 }
 .btn-primary:hover,
 .btn-primary:focus,
